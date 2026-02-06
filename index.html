@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Santo Diprima</title>
-    <link rel="stylesheet" type="text/css" href="css/style_prova.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_mobile_first.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
       rel="stylesheet"
@@ -25,13 +25,7 @@
             <a href="#resume"><b>Who am I?</b></a>
           </li>
           <li>
-            <a href="#Paper"><b>Paper</b></a>
-          </li>
-          <li>
-            <a href="#My-Journey"><b>My Journey</b></a>
-          </li>
-          <li>
-            <a href="#Project"><b>Project</b></a>
+            <a href="#CV"><b>CV</b></a>
           </li>
           <li>
             <a href="#Contact"><b>Contact</b></a>
@@ -59,7 +53,7 @@
             <p>
               Hey there! My name is
               <span class="highlight-text">Santo Diprima</span>. I'm a
-              Bioiformatician with a passion for tackling challenges.
+              Bioinformatician with a passion for tackling challenges.
             </p>
             <p>
               I bring professional skills in
@@ -78,225 +72,229 @@
           </div>
         </article>
 
-        <!-- THIRD ARTICLE -->
-        <article class="section" id="Paper">
-          <div class="content-paper">
-            <div>
-              <!-- <img src="images/neuron_cover_mod.png" /> -->
-              <img src="images/neuron.jpg" />
+        <!-- CV SECTION -->
+        <article class="section" id="CV">
+          <div class="cv-container">
+            <h2 class="cv-title">Curriculum Vitae</h2>
+
+            <div class="cv-content">
+              <!-- Download Button -->
+              <div class="cv-download">
+                <a href="#" class="cv-btn">
+                  <i class="fas fa-download"></i> Download CV
+                </a>
+              </div>
+
+              <!-- CV Sections -->
+              <div class="cv-sections">
+                <!-- EXPERIENCE -->
+                <div class="cv-section">
+                  <h3 class="cv-section-title">
+                    <i class="fas fa-briefcase"></i> Professional Experience
+                  </h3>
+                      <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Bioinformatician - Yale University</h4>
+                      <span class="cv-date">2024 - Present</span>
+                    </div>
+                    <p class="cv-institution">Yale School of Medicine - Hepar Lab</p>
+                    <p class="cv-detail">Scientist in Bioinformatics and Data Analysis</p>
+                  </div>
+
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Bioinformatician - San Raffaele</h4>
+                      <span class="cv-date">2022 - 2023</span>
+                    </div>
+                    <p class="cv-institution">
+                      IRCCS Ospedale San Raffaele - Center for Omics Sciences
+                    </p>
+                    <p class="cv-detail">Bioinformatics research area</p>
+                  </div>
+
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Junior Bioinformatician - San Raffaele</h4>
+                      <span class="cv-date">2021 - 2022</span>
+                    </div>
+                    <p class="cv-institution">
+                      IRCCS Ospedale San Raffaele - Division of Neuroscience
+                    </p>
+                    <p class="cv-detail">Molecular neurobiology Unit</p>
+                  </div>
+                </div>
+
+                <!-- SKILLS -->
+                <div class="cv-section">
+                  <h3 class="cv-section-title">
+                    <i class="fas fa-code"></i> Skills
+                  </h3>
+
+                  <!-- Biological Skills -->
+                  <div class="cv-skills-subsection">
+                    <h4 class="cv-skills-subtitle">Biological Skills</h4>
+                    <div class="cv-skills">
+                      <span class="cv-skill">Spatial Transcriptomics</span>
+                      <span class="cv-skill">Single Cell RNAseq</span>
+                      <span class="cv-skill">Bulk RNAseq</span>
+                      <span class="cv-skill">Liver Biology</span>
+                      <span class="cv-skill">Neuroscience</span>
+                    </div>
+                  </div>
+
+                  <!-- Informatics Skills -->
+                  <div class="cv-skills-subsection">
+                    <h4 class="cv-skills-subtitle">Informatics Skills</h4>
+                    <div class="cv-skills">
+                      <span class="cv-skill">Python</span>
+                      <span class="cv-skill">R</span>
+                      <span class="cv-skill">Data Analysis</span>
+                      <span class="cv-skill">Machine Learning</span>
+                      <span class="cv-skill">Statistical Analysis</span>
+                      <span class="cv-skill">Linux</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- PUBLICATIONS -->
+                <div class="cv-section">
+                  <h3 class="cv-section-title">
+                    <i class="fas fa-newspaper"></i> Publications
+                  </h3>
+
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Small, 2026</h4>
+                      <span class="cv-date">DOI: 10.1002/smll.202513071</span>
+                    </div>
+                    <p class="cv-institution">
+                      Christian A. Di Buduo, Carolina P. Miguel, Giulia Della
+                      Rosa, Vittorio Abbonante, <b>Santo Diprima</b>, et al.
+                    </p>
+                    <p class="cv-detail">
+                      Thermo-Chemically Modified Silk Scaffolds Reveal
+                      Niche-Driven Regulation of Hematopoiesis and Fibrosis
+                    </p>
+                  </div>
+
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Preprint, 2025</h4>
+                      <span class="cv-date"
+                        >DOI: 10.1101/2025.07.22.666120</span
+                      >
+                    </div>
+                    <p class="cv-institution">
+                      Alessia Motta, <b>Santo Diprima</b>, Aurora Badaloni,
+                      Ganesh Parameshwar Bhat, et al.
+                    </p>
+                    <p class="cv-detail">
+                      A neurovascular template guides the spatial and functional
+                      compartmentalization of the adrenal gland
+                    </p>
+                  </div>
+
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>
+                        International Journal of Biological Sciences, 2025
+                      </h4>
+                      <span class="cv-date">DOI: 10.7150/ijbs.103194</span>
+                    </div>
+                    <p class="cv-institution">
+                      Silvia Valtorta, Silvia Granata, Stefano de Pretis, Gloria
+                      Bertoli, <b>Santo Diprima</b>, et al.
+                    </p>
+                    <p class="cv-detail">
+                      Radio-chemotherapy and metformin selectively modulate the
+                      heterogeneous landscape of glioma with ribosome
+                      biogenesis, long non coding RNA and immune-escape markers
+                      as major player
+                    </p>
+                  </div>
+
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Blood Advances, 2025</h4>
+                      <span class="cv-date"
+                        >DOI: 10.1182/bloodadvances.2024014905</span
+                      >
+                    </div>
+                    <p class="cv-institution">
+                      Christian A. Di Buduo, Francesca Careddu, Samuele Metti,
+                      <b>Santo Diprima</b>, et al.
+                    </p>
+                    <p class="cv-detail">
+                      In vitro studies of human erythropoiesis using a 3D
+                      silk-based bone marrow model that generates erythroblastic
+                      islands
+                    </p>
+                  </div>
+
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Cell and Tissue Research, 2024</h4>
+                      <span class="cv-date"
+                        >DOI: 10.1007/s00441-024-03876-9</span
+                      >
+                    </div>
+                    <p class="cv-institution">
+                      Roberta De Mori, Silvia Tardivo, Lidia Pollara,
+                      <b>Santo Diprima</b>, et al.
+                    </p>
+                    <p class="cv-detail">
+                      Joubert syndrome-derived induced pluripotent stem cells
+                      show altered neuronal differentiation in vitro
+                    </p>
+                  </div>
+
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Neuron, 2024</h4>
+                      <span class="cv-date"
+                        >DOI: 10.1016/j.neuron.2023.10.025</span
+                      >
+                    </div>
+                    <p class="cv-institution">
+                      Ganesh Parameshwar Bhat, Aurora Maurizio, Alessia Motta,
+                      Paola Podini, <b>Santo Diprima</b>, et al.
+                    </p>
+                    <p class="cv-detail">
+                      Structured wound angiogenesis instructs mesenchymal
+                      barrier compartments in the regenerating nerve
+                    </p>
+                  </div>
+                </div>
+
+                <!-- EDUCATION -->
+                <div class="cv-section">
+                  <h3 class="cv-section-title">
+                    <i class="fas fa-graduation-cap"></i> Education
+                  </h3>
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Master's degree in Bioinformatics</h4>
+                      <span class="cv-date">2019 - 2021</span>
+                    </div>
+                    <p class="cv-institution">Tor Vergata University of Rome</p>
+                    <p class="cv-detail">Final Grade: 110/110 cum laude</p>
+                  </div>
+
+                  <div class="cv-item">
+                    <div class="cv-item-header">
+                      <h4>Bachelor's degree in Biotechnology</h4>
+                      <span class="cv-date">2016 - 2019</span>
+                    </div>
+                    <p class="cv-institution">University of Eastern Piedmont</p>
+                    <p class="cv-detail">Final Grade: 104/110</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="highlight-text">
-              Wound angiogenesis instructs mesenchymal barrier compartments in
-              the regenerating nerve
-              <span class="authors"
-                >Ganesh Parameshwar Bhat,Aurora Maurizio,Alessia Motta,Paola
-                Podini, <span class="highlight-text">Santo Diprima</span>,
-                Chiara Malpighi, Ilaria Brambilla, Luis Martins, Aurora
-                Badaloni, Daniela Boselli, Francesca Bianchi, Marta Pellegatta,
-                Marco Genua, Renato Ostuni , Ubaldo Del Carro, Carla Taveggia,
-                Stefano de Pretis, Angelo Quattrini, Dario Bonanomi
-              </span>
-            </p>
           </div>
         </article>
 
-        <!-- FOURTH ARTICLE -->
-        <article class="section long-page" id="My-Journey">
-          <div class="timeline">
-            <div class="timeline-empty">
-              <p class="date-left">01/03/2022 - 01/03/2023</p>
-              <img src="images/logo.DNA_transparent.png" class="logo" />
-            </div>
-            <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-content">
-              <h3 class="highlight-text">Bioinformatician</h3>
-              <p>
-                <span class="date-short">01/03/2022 - 01/03/2023<br /></span>
-                IRCCS Ospedale San Raffaele<br />
-                Center for Omics Sciences<br />
-                Bioinformatics research area
-              </p>
-            </div>
-
-            <div class="timeline-content">
-              <h3 class="highlight-text">Junior Bioinformatician</h3>
-              <p>
-                <span class="date-short">01/03/2021 - 01/03/2022<br /></span>
-                IRCCS Ospedale San Raffaele<br />
-                Division of Neuroscience<br />
-                Molecular neurobiology Unit
-              </p>
-            </div>
-            <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-empty">
-              <p class="date-right">01/03/2021 - 01/03/2022</p>
-              <img
-                src="images/nuovo_Logo_DNS/logo DNS orizz. bianco.png"
-                class="logo"
-              />
-            </div>
-
-            <div class="timeline-empty">
-              <p class="date-left">04/10/2019 – 22/07/2021</p>
-              <img
-                src="images/LOGO - ATENEO_BIANCO_20230308.png"
-                class="logo"
-              />
-            </div>
-            <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-content">
-              <h3 class="highlight-text">Master's degree in Bioinformatics</h3>
-              <p>
-                <span class="date-short">04/10/2019 – 22/07/2021<br /></span>
-                Tor Vergata University of Rome<br />
-                Final Grade: 110/110 cum laude<br />
-              </p>
-            </div>
-
-            <div class="timeline-content">
-              <h3 class="highlight-text">Bachelor's degree in Biotechnology</h3>
-              <p>
-                <span class="date-short">08/09/2016 – 26/07/2019<br /></span>
-                University of Eastern Piedmont<br />
-                Final Grade: 104/110<br />
-              </p>
-            </div>
-            <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-empty">
-              <p class="date-right">08/09/2016 – 26/07/2019</p>
-              <img
-                src="images/Logo_Università_del_Piemonte_Orientale.png"
-                class="logo"
-              />
-            </div>
-
-            <div class="timeline-empty">
-              <p class="date-left">??/!!/2012 – ??/!!/2016</p>
-              <img
-                src="images/vecteezy_hat-chef-icon-vector-template_34530049 [Converted]_white.svg"
-                class="logo"
-              />
-            </div>
-            <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-content">
-              <h3 class="highlight-text">Chef</h3>
-              <p>
-                <span class="date-short">??/!!/2012 – ??/!!/2016<br /></span>
-                Planet Earth<br />
-                Kindom of Yummy Food<br />
-                Stresstopia<br />
-              </p>
-            </div>
-
-            <div class="timeline-content">
-              <h3 class="highlight-text">
-                High school diploma in culinary arts
-              </h3>
-              <p>
-                <span class="date-short">14/09/2007 – 05/07/2012<br /></span>
-                I.I.S.S. Amato Vetrano<br />
-                Final Grade: 95/100<br />
-              </p>
-            </div>
-            <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-empty">
-              <p class="date-right">14/09/2007 – 05/07/2012</p>
-              <img src="images/MUR-logo_mod.svg" class="logo" />
-            </div>
-          </div>
-        </article>
-
-        <!-- FIFTH PAGE -->
-        <article class="section" id="Project">
-          <div class="poster">
-            <img src="images/poster retreat 2023 OSR copy 3.jpg" />
-          </div>
-        </article>
-
-        <!-- SIXTH PAGE -->
-        <article class="section long-page" id="Project-thesis">
-          <div class="thesis">
-            <img src="images/DIPRIMA_SANTO_discussione-3.0/Slide1.jpg" />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide2.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide3.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide4.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide5.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide6.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide7.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide8.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide9.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide10.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide11.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide12.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide13.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide14.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide15.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide16.jpeg"
-            />
-            <img
-              class="unnecessary"
-              src="images/DIPRIMA_SANTO_discussione-3.0/Slide17.jpeg"
-            />
-          </div>
-        </article>
-
-        <!-- Seventh PAGE -->
+        <!-- CONTACT PAGE -->
         <article class="section" id="Contact">
           <div class="contact">
             <p>
@@ -319,11 +317,11 @@
                 ><img
                   src="images/Gmail with Text mod.svg"
                   width="200px"
-                  target="”_blank”"
+                  target="_blank"
               /></a>
               <a
                 href="https://www.linkedin.com/in/santo-diprima/"
-                target="”_blank”"
+                target="_blank"
                 ><img src="images/linkedin-ar21_mod.svg" width="200px"
               /></a>
             </div>
