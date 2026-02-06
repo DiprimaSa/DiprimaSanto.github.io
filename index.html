@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Santo Diprima</title>
-    <link rel="stylesheet" type="text/css" href="css/styles_mobile_first.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles_mobile_first.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="css/modern_demo.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
       rel="stylesheet"
@@ -15,9 +16,15 @@
     />
   </head>
   <body>
+    <canvas id="particle-canvas"></canvas>
     <header>
       <nav>
-        <ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
           <li>
             <a href="#Santo" class="highlight-text"><b>Santo Diprima</b></a>
           </li>
@@ -39,7 +46,7 @@
         <!-- FIRST ARTICLE -->
         <article class="section Santo" id="Santo">
           <div>
-            <img src="images/ImagePortfolio.svg" />
+            <img src="images/logo_modern.png" alt="Santo Diprima Bioinformatics Logo" />
           </div>
           <p>
             Helping people make the world a better place through bioinformatics
@@ -77,7 +84,7 @@
           <div class="cv-container">
             <h2 class="cv-title">Curriculum Vitae</h2>
 
-            <div class="cv-content">
+            <div class="timeline-content hidden-scroll">
               <!-- Download Button -->
               <div class="cv-download">
                 <a href="#" class="cv-btn">
@@ -88,7 +95,7 @@
               <!-- CV Sections -->
               <div class="cv-sections">
                 <!-- EXPERIENCE -->
-                <div class="cv-section">
+                <div class="cv-section hidden-scroll">
                   <h3 class="cv-section-title">
                     <i class="fas fa-briefcase"></i> Professional Experience
                   </h3>
@@ -125,7 +132,7 @@
                 </div>
 
                 <!-- SKILLS -->
-                <div class="cv-section">
+                <div class="cv-section hidden-scroll">
                   <h3 class="cv-section-title">
                     <i class="fas fa-code"></i> Skills
                   </h3>
@@ -157,7 +164,7 @@
                 </div>
 
                 <!-- PUBLICATIONS -->
-                <div class="cv-section">
+                <div class="cv-section hidden-scroll">
                   <h3 class="cv-section-title">
                     <i class="fas fa-newspaper"></i> Publications
                   </h3>
@@ -267,7 +274,7 @@
                 </div>
 
                 <!-- EDUCATION -->
-                <div class="cv-section">
+                <div class="cv-section hidden-scroll">
                   <h3 class="cv-section-title">
                     <i class="fas fa-graduation-cap"></i> Education
                   </h3>
@@ -329,5 +336,7 @@
         </article>
       </section>
     </main>
+    <script src="js/script.js"></script>
+    <script src="js/particles.js"></script>
   </body>
 </html>

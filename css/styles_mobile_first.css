@@ -10,11 +10,14 @@
 }
 
 * {
-  background-color: #282828;
   font-family: satoshi, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #282828;
 }
 
 html {
@@ -114,6 +117,22 @@ header nav {
   padding: 1.5rem 2rem;
 }
 
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px; /* Add hit area */
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color); /* Ensure this variable exists or fallback to white */
+  margin: 5px;
+  display: block; /* Ensure block display */
+  transition: all 0.3s ease;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -139,6 +158,87 @@ nav li:first-child {
 nav a {
   display: block;
   padding: 0.5rem;
+}
+
+/* Mobile Nav Styles */
+@media screen and (max-width: 768px) {
+  header {
+    box-shadow: none;
+    background: transparent;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 2rem; /* Ensure padding matches header */
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    z-index: 1002;
+  }
+
+  /* Animate Hamburger */
+  .hamburger.toggle .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: var(--highligth-text);
+  }
+
+  .hamburger.toggle .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.toggle .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: var(--highligth-text);
+  }
+
+  nav ul.nav-links {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(40, 40, 40, 0.98);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transform: translateX(100%); /* Hidden by default */
+    transition: transform 0.4s ease-in-out;
+    z-index: 1001;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul.nav-links.nav-active {
+    transform: translateX(0%);
+  }
+
+  nav li {
+    opacity: 0; /* Fade in animation */
+  }
+
+  nav ul.nav-links.nav-active li {
+    opacity: 1;
+    transition: opacity 0.5s ease 0.2s;
+  }
+
+  nav li:first-child {
+    flex-basis: auto; /* Reset flex basis on mobile menu */
+    margin-bottom: 0;
+    font-size: 1.5rem; /* Make Name prominent in menu */
+  }
+
+  nav a {
+    font-size: 1.5rem; /* Larger touch targets */
+  }
 }
 
 /* =====================================================
