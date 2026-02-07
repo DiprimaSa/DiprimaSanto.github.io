@@ -1,0 +1,115 @@
+/* MODERN DESIGN DEMO Styles */
+
+/* 1. SCROLL ANIMATIONS */
+/* Base state for animated elements */
+.hidden-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* State when visible */
+.show-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for children if needed */
+.cv-item:nth-child(even) {
+    transition-delay: 0.1s;
+}
+
+/* =========================================
+   MODERN GREEN LIGHT THEME (Fresh & Biotech)
+   ========================================= */
+
+/* PARTICLE BACKGROUND - LIGHT CREAM/MINT */
+#particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: #fdfdfd; /* Very clean white */
+}
+
+/* Fix visibility issues caused by * selector in original CSS */
+body, html, main, header, footer, section:not(.cv-section):not(.timeline-content):not(.resume), .timeline, .container {
+    background-color: transparent !important;
+    background: transparent !important;
+    color: #333 !important; /* Dark text for readability */
+}
+
+/* Override global text color */
+p, h1, h2, h3, h4, h5, h6, li, span, a {
+    color: #2c3e50;
+}
+
+/* HEADER & NAV */
+/* Make hamburger dark so it's visible on light bg */
+.hamburger .line {
+    background-color: #2c3e50 !important;
+}
+
+/* GLASSMORPHISM CARDS - WHITE VERSION */
+.timeline-content, .cv-section, #resume .resume {
+    background: rgba(255, 255, 255, 0.75) !important; /* White glass */
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(0, 150, 100, 0.1) !important; /* Subtle green border */
+    box-shadow: 0 8px 32px 0 rgba(31, 100, 80, 0.1) !important; /* Soft green shadow */
+    border-radius: 16px !important;
+    padding: 2rem !important;
+    color: #333 !important;
+}
+
+/* Make text inside resume transparent background but dark color */
+#resume p {
+    background: transparent !important;
+    color: #333 !important;
+}
+
+/* TIMELINE AND CARDS */
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* GRADIENT TITLES */
+.cv-title, .timeline-title {
+    background: -webkit-linear-gradient(45deg, #00b09b, #96c93d); /* Fresh Green Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+    font-weight: 700;
+}
+
+/* LOGO INTEGRATION */
+.Santo img {
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    /* Invert filter to make neon logo look good on light, or just drop shadow */
+    filter: drop-shadow(0 0 10px rgba(0, 200, 100, 0.3));
+    animation: floating 6s ease-in-out infinite;
+}
+
+/* SCROLL ANIMATIONS */
+.hidden-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.show-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}

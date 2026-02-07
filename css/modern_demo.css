@@ -1,0 +1,110 @@
+/* MODERN DESIGN DEMO Styles */
+
+/* 1. SCROLL ANIMATIONS */
+/* Base state for animated elements */
+.hidden-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* State when visible */
+.show-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for children if needed */
+.cv-item:nth-child(even) {
+    transition-delay: 0.1s;
+}
+
+/* 2. GLASSMORPHISM CARDS */
+
+/* Timeline Items */
+.timeline-content {
+    background: rgba(31, 31, 31, 0.6) !important; /* Semi-transparent */
+    backdrop-filter: blur(10px); /* The Blur Effect */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle border */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+/* CV Sections */
+.cv-section {
+    background: rgba(31, 31, 31, 0.5) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Resume / Who am I section card effect */
+#resume .resume {
+    background: rgba(31, 31, 31, 0.5); /* Match other cards */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+#resume p {
+    background: transparent !important; /* Fix opaque text block */
+}
+
+/* 3. HERO & TYPOGRAPHY ENHANCEMENTS */
+
+/* Subtle gradient text for main titles */
+.Santo p {
+    background: -webkit-linear-gradient(45deg, #ffffff, #a6a6a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important; /* Fix blur caused by shadow on transparent text */
+}
+
+.cv-title, .timeline-title {
+    background: -webkit-linear-gradient(45deg, var(--highligth-text), #4a9eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important; /* Remove old shadow to let gradient shine */
+}
+
+/* LOGO INTEGRATION */
+.Santo img {
+    max-width: 250px; /* Limit logo size */
+    width: 100%;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 15px rgba(74, 158, 255, 0.4)); /* Neon glow match */
+    animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* PARTICLE BACKGROUND */
+#particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: transparent; /* Changed from #282828 to allow body background to show */
+}
+
+/* Fix visibility issues caused by * selector in original CSS */
+main, header, footer, section:not(.cv-section):not(.timeline-content):not(.resume), .timeline, .container {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Ensure glass cards keep their background */
+.cv-section, .timeline-content, #resume .resume {
+    /* These have their own background defined above */
+}
